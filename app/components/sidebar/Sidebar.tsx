@@ -15,6 +15,7 @@ async function Sidebar({ children }: {
   }
 
   return (
+    // @ts-expect-error Server Component
     <div className="h-full">
       <DesktopSidebar currentUser={currentUser!} />
       <MobileFooter />
