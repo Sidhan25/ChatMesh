@@ -5,7 +5,14 @@ import MobileFooter from './MobileFooter';
 async function Sidebar({ children }: {
   children: React.ReactNode,
 }) {
-  const currentUser = await getCurrentUser();
+  let currentUser;
+
+  try {
+    currentUser = await getCurrentUser();
+  } catch (error) {
+    console.error("Error fetching current user:", error);
+    return null;
+  }
 
   return (
     <div className="h-full">
