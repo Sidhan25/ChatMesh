@@ -20,5 +20,5 @@ export default async function ConversationsLayout({
         {children}
       </div>
     </Sidebar>
-  )
-};
+  );
+}
