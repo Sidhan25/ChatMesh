@@ -8,8 +8,8 @@ import ActiveStatus from './components/ActiveStatus'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'ChatMesh',
-  description: 'ChatMesh',
+  title: 'ChatUnite',
+  description: 'ChatUnite',
 }
 
 export default function RootLayout({
